@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class CreditUnion {
 private String creditUnionName;
 private String address;
-private Account[] a1=new Account[100];
+private Account[] a1;
 public CreditUnion() {
 }
 public CreditUnion(String creditUnionName, String address) {
@@ -25,6 +25,7 @@ public void setAddress(String address) {
 }
 
 public void setAccounts(Account[] a) {
+	a1=new Account[a.length];
 	for(int i=0;i<a.length;i++) {
 		if(a[i] instanceof MoneyMarket)
 		{
