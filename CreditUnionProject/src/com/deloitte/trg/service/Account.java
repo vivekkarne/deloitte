@@ -27,6 +27,11 @@ public abstract class Account {
 	}
 	public abstract String getAccType();
 	public abstract void setAccType(String accType);
+	@Override
+	public String toString() {
+		return "Account [owner=" + this.owner + ", balance=" + this.balance + "]";
+	}
+	
 }
 
 
