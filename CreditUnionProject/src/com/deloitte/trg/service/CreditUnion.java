@@ -36,4 +36,9 @@ public void setAccounts(Account[] a) {
 		}
 	}
 }
+	@Override
+	public String toString() {
+	return "CreditUnion [creditUnionName=" + creditUnionName + ", address=" + address + ", a1=" + Arrays.toString(a1)+ "]";
+
+}
 }
