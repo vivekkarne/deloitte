@@ -28,11 +28,11 @@ public void setAccounts(Account[] a) {
 	for(int i=0;i<a.length;i++) {
 		if(a[i] instanceof MoneyMarket)
 		{
-			a1[i]=new MoneyMarket();
+			a1[i]=a[i];
 		}
 		else if(a[i] instanceof CertificateOfDeposit)
 		{
-			a1[i]=new CertificateOfDeposit();
+			a1[i]=a[i];
 		}
 	}
 }
